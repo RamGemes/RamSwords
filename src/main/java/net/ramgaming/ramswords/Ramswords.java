@@ -17,5 +17,6 @@ public class Ramswords implements ModInitializer {
 
 		LOGGER.info("Starting initialization for mod: "+MOD_ID);
 		ModItems.registerModItems();
+		RamswordsEvents.onInitialize();
 	}
 }

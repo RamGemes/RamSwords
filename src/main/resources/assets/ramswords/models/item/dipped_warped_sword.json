@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ramswords:item/dipped_warped_sword"
+  }
+}

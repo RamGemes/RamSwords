@@ -10,9 +10,9 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ToolMaterials implements ToolMaterial {
-    PRISM(3, 1024, 2.0F, 0.0F, 12, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.PRISMARINE_SHARD});
-    })
+    PRISM(3, 512, 2.0F, 0.0F, 12, () -> Ingredient.ofItems(Items.PRISMARINE_SHARD)),
+    SPECIAL(3, 1024, 2.0F, 7.0F, 10, () -> null),
+    WARPED(0, 59, 2.0F, 4.0F, 15, () -> Ingredient.ofItems(Items.WARPED_PLANKS))
     ;
 
 

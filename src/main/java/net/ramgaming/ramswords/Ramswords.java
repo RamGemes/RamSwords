@@ -1,6 +1,7 @@
 package net.ramgaming.ramswords;
 
 import net.fabricmc.api.ModInitializer;
+import net.ramgaming.ramswords.block.ModBlocks;
 import net.ramgaming.ramswords.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,5 +19,6 @@ public class Ramswords implements ModInitializer {
 		LOGGER.info("Starting initialization for mod: "+MOD_ID);
 		ModItems.registerModItems();
 		RamswordsEvents.onInitialize();
+		ModBlocks.registerModBlocks();
 	}
 }
